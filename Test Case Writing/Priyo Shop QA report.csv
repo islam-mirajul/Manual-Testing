@@ -1,0 +1,15 @@
+Project Name: Priyo Shop,,Sprint - 1,No. of Features: 1,,No. of test Cases: 12,,Total Bugs: 1,,,,
+,,,,,,,,,,,
+Test Case Run,,,,,,Severity,,,,,
+Status,Count,,,,Component,Critical,Minor,Low,Subtotal,,
+Passed,7,,,,Backend,0,0,0,0,,
+Blocked,0,,,,Android,0,0,0,0,,
+Untested,0,,,,Backoffice,0,0,0,0,,
+Warning,3,,,,Total,0,0,0,,,
+Failed,2,,,,,,,,,,
+,,,,,,Bug-Type,,,,,
+,,,,,Component,Functional,Visual,Content,Performance,Crash,Subtotal
+,,,,,Backend,0,0,0,0,0,0
+,,,,,Android,0,0,0,0,0,0
+,,,,,Backoffice,0,0,0,0,0,0
+,,,,,Total,0,0,0,0,0,0
