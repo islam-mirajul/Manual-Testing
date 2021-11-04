@@ -1,0 +1,95 @@
+Project Name,Priyo Shop,TC Start Date,10/28/2021,TC Execution Start Date,10/28/2021,TEST CASE SUMMARY,,,,
+Module Name,Register,TC End Date,10/29/2021,TC Execution End Date,10/29/2021,PASS,7,,,
+Epic,,Test Case Developed By,Mirajul Islam,Browser (tested),1,FAIL,2,,,
+Developer Name (TL),X,Test Case Reviewed By,,Performance (tested),No,WARNING,3,,,
+,,,,,,TOTAL,12,,,
+,,,,,,,,,,
+Test Case ID,Test Case Senario,Test Case,Pre Condition,Test Steps,Test Data,Expected Result,Actual Result,Status,Remark,Comments
+TC_PS_001,Verify name field,"Enter Invalid user name
+ and other data valid",N/A,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box",@#$%^^&,User should get an alart Invalid Name of special cheracter,"Registered successfully With ""Invalid Name""",FAIL,TC_PS_001,"It is better to have separate text fields
+ for first name and last name"
+TC_PS_002,Verify Email field,"Enter Invalid Email
+ and other data valid",Select Email Radio box,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email Radio box",abcd123gmailcom,User should get an alart of Invalid Email,"Showing correctly ""Email is required""",PASS,TC_PS_002,
+TC_PS_003,Verify Phone field,"Enter Invalid phone 
+number and other data valid",Select Phone Radio box,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Phone Radio box",161194693,User should get an alart of Invalid phone number,"Showing correctly ""Phone is required""",PASS,TC_PS_003,"Since it is only for Bangladesh's number,
+ it would be better to give Bangladesh's 
+number code(+880) and number pattern 
+in the text hint at the beginning."
+TC_PS_004,Verify Password field,"Enter Invalid password 
+number and other data valid",N/A,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box",123,User should get an alart of password should have at least 6 characters,"Showing correctly ""The 
+password should have at least 6 characters""",PASS,TC_PS_004,"Minimum of 1 lower case letter [a-z] and
+Minimum of 1 upper case letter [A-Z] and
+Minimum of 1 numeric character [0-9] and
+Minimumof 1 special character: ~`!@#$%^&*()-_+={}[]|\;:""<>,./?
+Passwords must be at least 8 characters in length, but can be much longer
+It would have been better to give such a requirement"
+TC_PS_005,Verify Confirm Password field,Enter Invalid Confirm password number and other data valid,Must enter Password,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box","123457
+(password was 
+123456)","User should get an alart of The 
+password and confirmation
+ password do not match.","Showing correctly ""The 
+password and confirmation 
+password do not match""",PASS,TC_PS_005,
+TC_PS_006,Verify Street address field,Enter Invalid  Street address and other data valid,N/A,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box",@#$####*^^^,User should get an alart Invalid Street address of special cheracter,"Registered successfully With
+ ""Invalid Street addres""",FAIL,TC_PS_006,
+TC_PS_007,Verify Country field,Enter Invalid  Country and other data valid,N/A,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box","(There is no option
+ to type yourself)","There should be a Drop-down 
+list which contains all
+country names","There is a Drop-down list which contains all
+country names",PASS,TC_PS_007,
+TC_PS_008,Verify District field,Enter Invalid  Country and other data valid,Country Should be selected,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box","(There is no option
+ to type yourself)","There should be a Drop-down 
+list which contains all
+district names for previously selected country.","There is a Drop-down list which contains all
+District names of Bangladesh but There is no option to select a state or district for other countries",WARNING,TC_PS_008,
+TC_PS_009,Verify Police Station field,Enter Invalid   Police Station and other data valid,"Country and District 
+Should be selected","1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box","(There is no option
+ to type yourself)","There should be a Drop-down 
+list which contains all
+district names for previously selected country and District","There is a Drop-down list which contains all
+Police Station names of Bangladesh but There is no option to select Police Station for other countries",WARNING,TC_PS_009,
+TC_PS_010, Verify privacy policy,Read privacy policy,N/A,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box
+5-Tap on (read)",N/A,"There should goto a new page or Pop-up window for read 
+privacy policy",There is a Pop-up window for read privacy policy,PASS,TC_PS_010-1,
+,,Do not select check box,Fill up all fields,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box
+",N/A,"User should get an alart or Pop-up window for accept  
+privacy policy",Thera is a Pop-up window for accept  privacy policy,PASS,TC_PS_010-2,
+TC_PS_011,Verify Register Button,Do not Fill up all fields,N/A,"1-Goto ""https://priyoshop.com/"" 
+2-Move cursor to ""My Account
+3-Tap on ""Register""
+4-Select Email or phone Radio box
+",N/A,User should get an alart or Pop-up window for fill up all required fields,Thera is  an alart for fill up required fields but many fields are empty but alert for only 1 field,WARNING,TC_PS_011,"It would be nice to have an alert through a 
+pop up window"
